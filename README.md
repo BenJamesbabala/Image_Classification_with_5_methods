@@ -125,6 +125,7 @@ We only used 10 cat breeds in our project.
 The classes we used here is 
  ['Sphynx','Siamese','Ragdoll','Persian','Maine-Coon','British-shorthair','Bombay','Birman','Bengal','Abyssinian']
 
+So we have totally **2000 images** in our dataset. 
 The sizes are different with each other. But we resized them into fixed sizes like 64 x 64 or 128 x 128. 
 
 ### Preprocessing
@@ -198,6 +199,8 @@ We chose 1 x 10^-4.
 	
 	However, the result is -- **Overfitting**. Only after a thousand iteration, our program get 100% training accuracy and only 30 % test accuracy.	
 	At first I'm pretty confused about why we got overfitting, and I tried to adjust parameters randomly, and things never getting better. Several days later, I happened to read a article by Google talking about a deep learning project conducted by Chinese researchers. [Link](https://medium.com/@blaisea/physiognomys-new-clothes-f2d4b59fdd6a) .  They pointed out that the research conducted by them is problematic. "**One technical problem is that fewer than 2000 examples are insufficient to train and test a CNN like AlexNet without overfitting**." So I realized that, first our dataset is actually small, second, our network is too complicated. 
+	
+	**Remember our dataset contains exactly 2000 images**
 	
 	Then I tried to reduce the number layers and sizes of kernels. I tried many parameters, this is the final structure we used. 
 	
