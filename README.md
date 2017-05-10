@@ -310,4 +310,4 @@ We learnt some very important experience for image classification task. This kin
 4. [Image Augmentation for Deep Learning With Keras](http://machinelearningmastery.com/image-augmentation-deep-learning-keras/)
 5. [Convolutional Neural Network TensorFlow Tutorial](https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/02_Convolutional_Neural_Network.ipynb)
 
-End
+Note: The first method is performed by Ji Tong https://github.com/JI-tong 
